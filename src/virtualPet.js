@@ -20,7 +20,6 @@ Dinosaur.prototype.growUp = function() {
   this.fitness -= 3;
 };
 
-
 Dinosaur.prototype.walk = function() {
   if (!this.isAlive) {
     throw new Error('Your dinosaur is no longer alive :(');
@@ -32,7 +31,6 @@ Dinosaur.prototype.walk = function() {
   }
 
 };
-
 
 Dinosaur.prototype.feed = function() {
   if ((this.hunger - 3) >= MIN_HUNGER) {
@@ -67,16 +65,3 @@ Dinosaur.prototype.checkUp = function() {
 };
 
 module.exports = Dinosaur;
-
-
-
-
-
-
-
-
-
-
-
-
-

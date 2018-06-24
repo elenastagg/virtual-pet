@@ -21,7 +21,6 @@ describe('creating a new Dinosaur', () => {
 
 });
 
-
 describe('growUp', () => {
   it('increments the age by 1', () => {
     myDinosaur.growUp();
@@ -42,7 +41,6 @@ describe('growUp', () => {
   });
 });
 
-
 describe('walk', () => {
   it('increments fitness by 4', () => {
     myDinosaur.fitness = 4;
@@ -62,7 +60,6 @@ describe('walk', () => {
 
 });
 
-
 describe('feed', () => {
   it('decrements the dinosaurs hunger by 3', () => {
     myDinosaur.hunger = 6;
@@ -81,7 +78,6 @@ describe('feed', () => {
     expect(myDinosaur.walk).toThrow('Your dinosaur is no longer alive :(');
   });
 });
-
 
 describe('isAlive', () => {
   it('returns false if fitness is <= 0', () => {
@@ -114,7 +110,6 @@ describe('isAlive', () => {
 
 });
 
-
 describe('checkUp', () => {
   it('returns "I need a walk" if fitness is 3 or less & the dino is not hungry', () => {
     myDinosaur.fitness = 3;
@@ -146,15 +141,3 @@ describe('checkUp', () => {
   });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
